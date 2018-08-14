@@ -2,7 +2,7 @@
 
 This example shows how to use Symfony 4 and Angular to create a basic CRUD app for tracking pun counts in movies, using Okta to handle authentication.
 
-Please read <Article Placeholder> to see how this application was built.
+Please read (Article Placeholder) to see how this application was built.
 
 **Prerequisites:** PHP, Node, [Okta developer account](https://developer.okta.com/)
 
@@ -51,7 +51,7 @@ Loading [127.0.0.1:8000](127.0.0.1:8000) now should show the default Symfony 4 p
 
 ### Set up the Frontend
 
-Edit the Okta configuration in `src/app/app.module.ts` to fill in your client ID and other application details. (Refer to the <ARTICLE PLACEHOLDER> for more details.) Then install the dependencies and run the server:
+Edit the Okta configuration in `src/app/app.module.ts` to fill in your client ID and other application details. (Refer to the (Article Placeholder) for more details.) Then install the dependencies and run the server:
 
 ```
 cd bad-puns-tracker-client-angular
@@ -64,7 +64,7 @@ Loading [127.0.0.1:4200](127.0.0.1:4200) now should show you the application.
 
 ## Help
 
-Please post any questions as comments on the <ARTICLE PLACEHOLDER>, or visit our [Okta Developer Forums](https://devforum.okta.com/). You can also email developers@okta.com if would like to create a support ticket.
+Please post any questions as comments on the (Article Placeholder), or visit our [Okta Developer Forums](https://devforum.okta.com/). You can also email developers@okta.com if would like to create a support ticket.
 
 ## License
 
