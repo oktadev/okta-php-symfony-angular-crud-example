@@ -1,0 +1,15 @@
+<div style="text-align:center">
+    <section class="section">
+        <div class="container">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-menu is-active buttons">
+                    <button class="button is-link" [routerLink]="['']">Home</button>
+                    <button class="button is-link" *ngIf="isAuthenticated" [routerLink]="['/movies']">Movies</button>
+                    <button class="button is-link" *ngIf="!isAuthenticated" (click)="login()"> Login </button>
+                    <button class="button is-link" *ngIf="isAuthenticated" (click)="logout()"> Logout </button>
+                </div>
+            </nav>
+            <router-outlet></router-outlet>
+        </div>
+    </section>
+</div>

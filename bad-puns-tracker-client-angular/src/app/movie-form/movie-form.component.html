@@ -1,0 +1,11 @@
+<span class="help is-danger">{{ errors }}</span>
+
+<div class="field">
+    <div class="control">
+        <input class="input" #movieTitle (keydown)="errors = ''">
+    </div>
+</div>
+
+<button type="button" class="button is-primary" [class.is-loading]="isLoading" (click)="addMovie(movieTitle.value)">Add Movie</button>
+
+

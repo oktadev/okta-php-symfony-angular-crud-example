@@ -1,0 +1,24 @@
+<div>
+    <span class="help is-info"  *ngIf="isLoading">Loading...</span>
+    <table class="table" *ngIf="!isLoading">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Bad Puns Count</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let movie of movies">
+                <td>{{ movie.id }}</td>
+                <td>{{ movie.title }}</td>
+                <td>{{ movie.count }}</td>
+                <td>
+                    <button type="button" class="button is-primary" [class.is-loading]="isUpdating(movie.id)" (click)="increaseCount(movie.id)">Increase Count</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<app-movie-form (movieAdded)="appendMovie($event)"></app-movie-form>
